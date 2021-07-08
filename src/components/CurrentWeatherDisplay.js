@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react"
 import { Alert, Jumbotron, Form, FormControl, Container, Card, Button, Col } from "react-bootstrap"
 import { callApi } from "../lib/utils"
-import MyLoader from "./MyLoader"
 import { ImageStyle } from "../lib/styles"
 
 export default (props) => {
@@ -40,9 +39,6 @@ export default (props) => {
     <Container>
       {currentCityZipcode && (
         <>
-          {!data && (
-            <MyLoader />
-          )}
           {data && (
             <>
               <Card>
