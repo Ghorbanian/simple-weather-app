@@ -52,15 +52,15 @@ $ cd simple-weather-app
 
 Go to the [Open Weather API](https://openweathermap.org/api) website and sign up for an API key. Create a new file named `.env` in the root of the project directory:
 ```
-touch .env
+$ touch .env
 ```
  Proceed to past the api key into it as such:
 
 ```
 echo "REACT_APP_WEATHER_API_KEY=<Your API KEY>" > ./.env
 ```
-Make sure you have npm installed. Install and start the app using npm: 
+Make sure you have [npm](https://docs.npmjs.com/getting-started) installed. Install and start the app using npm: 
 ```
-npm install
-npm start
+$ npm install
+$ npm start
 ```
