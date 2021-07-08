@@ -1,10 +1,6 @@
 # Simple Weather App #
 
-
-
----
-
-# Asignment #
+## Asignment ##
 
 Here at Clutch, we have a number of employees who love outdoor activities like hiking, biking, and playing sports. Unfortunately, Atlanta's weather can be a bit sporadic, so it’s always good for us to know what the next few days' weather looks like!
 
@@ -19,7 +15,7 @@ Open Weather API: https://openweathermap.org/api
 
 ---
 
-# Features Requested #
+## Features Requested ##
 
 * Shows current weather
 * Forecast for the next three days for multiple locations of user's choosing
@@ -31,27 +27,27 @@ Open Weather API: https://openweathermap.org/api
 
 ---
 
-# Notes #
+## Notes ##
 
 * The Open Weather API limits free-tier users to using the "One Call API" for multi-day forecasts, which only allows lookup by longitude and latitude. This is why the current-weather functionality accepts a zip code, but the track-location functionality only accepts longitude and latitude.
 * Removing tracked locations can be improved by using a hashset rather than an array to track coordinates.
 
 ---
 
-# Known Bugs #
+## Known Bugs ##
 
 * Multiple identicle locations can be added to the tracking list. Ideally, a location should be added to the tracking list only once.
 * Removing tracked locations does not result in automatic virtual DOM updates. In order for changes to show, a manual refresh using `window.location.reload()` is being used.
 
 ---
 
-# Quick Start Instructions #
+## Quick Start Instructions ##
 
 Begin by cloning the code repository from github: 
 
 ```
-$ git clone https://github.com/Ghorbanian/weather-app
-$ cd weather-app
+$ git clone https://github.com/Ghorbanian/simple-weather-app
+$ cd simple-weather-app
 ```
 
 Go to the [Open Weather API](https://openweathermap.org/api) website and sign up for an API key. Create a new file named `.env` in the root of the project directory:
@@ -63,7 +59,8 @@ touch .env
 ```
 echo "REACT_APP_WEATHER_API_KEY=<Your API KEY>" > ./.env
 ```
-Make sure you have npm installed. Start the app using npm: 
+Make sure you have npm installed. Install and start the app using npm: 
 ```
+npm install
 npm start
 ```
